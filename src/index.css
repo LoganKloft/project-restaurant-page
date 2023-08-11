@@ -1,34 +1,75 @@
-@font-face {
-    font-family: 'Rubik Moonrocks';
-    src: url('./RubikMoonrocks-Regular.ttf') format('ttf');
-    font-weight: 400;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 a {
-    text-decoration: none;
-    color: inherit;
+    background-image: linear-gradient(
+        to right,
+        #54b3d6,
+        #54b3d6 50%,
+        #ffffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    }
+
+a:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width:100%;
+}
+
+a.selected {
+    background-position: 0;
+}
+
+a.selected::before {
+    width: 100%;
 }
 
 .container .header {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 75px;
+    gap: 20px;
+    padding-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .container .footer {
     background-color: black;
     color: white;
-}
-
-.container .content .title-container {
-    background-image: url('./moonsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Rubik Moonrocks';
-    color: white;
+    text-align: center;
 }

@@ -1,0 +1,82 @@
+.container .content .title-container {
+    background-image: url('./moonsplash.jpg');
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content .ratings-container {
+    padding: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    & > p {
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    & > div p:nth-child(1) {
+        font-family: cursive;
+    }
+
+    & > div p:nth-child(2) {
+        font-family:'Courier New', Courier, monospace;
+    }
+}
+
+.container .content .hours-container {
+    padding: 100px;
+    height: 400px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('moonsplash.jpg');
+    background-size: cover;
+    font-size: 20px;
+
+    & p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+    }
+
+    & ol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        list-style-type: none;
+    }
+}
+
+.container .content .location-container {
+    padding: 100px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    & p:nth-child(1) {
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    & p:nth-child(2) {
+        text-align: center;
+    }
+}
