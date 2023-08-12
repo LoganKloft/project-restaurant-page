@@ -55,6 +55,13 @@ a.selected::before {
     width: 100%;
 }
 
+.container {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+}
+
 .container .header {
     background-color: black;
     color: white;
@@ -68,8 +75,14 @@ a.selected::before {
     font-size: 20px;
 }
 
-.container .footer {
-    background-color: black;
-    color: white;
-    text-align: center;
+.content {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.content > div > p {
+    font-family: 'Courier New', Courier, monospace;
 }
